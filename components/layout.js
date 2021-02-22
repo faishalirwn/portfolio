@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 export default function Layout({ children }) {
   return (
-    <div className="text-white font-sans px-4 mx-auto my-0 sm:max-w-3xl 2xl:max-w-6xl">
+    <div className="text-white font-sans px-6 mx-auto my-0 sm:max-w-3xl 2xl:max-w-4xl">
       <Head>
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -21,7 +21,7 @@ export default function Layout({ children }) {
         </button>
         <ul className="hidden md:flex">
           <li className="mr-14">
-            <Link href="">
+            <Link href="/blog">
               <a>Blog</a>
             </Link>
           </li>
