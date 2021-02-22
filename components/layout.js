@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 export default function Layout({ children }) {
   return (
-    <div className="text-white font-sans px-4 sm:px-28 2xl:px-96">
+    <div className="text-white font-sans px-4 mx-auto my-0 sm:max-w-3xl 2xl:max-w-6xl">
       <Head>
         <link rel="icon" href="/favicon.ico" />
       </Head>
