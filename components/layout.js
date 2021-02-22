@@ -19,7 +19,7 @@ export default function Layout({ children }) {
         <button type="button" className="md:hidden">
           <img src="/nav white.svg" className="w-10" alt="Hamburger Menu Button"/>
         </button>
-        <ul className="hidden md:flex">
+        <ul className="hidden md:flex text-lg">
           <li className="mr-14">
             <Link href="/blog">
               <a>Blog</a>
