@@ -42,22 +42,18 @@ export default function Layout({ children }) {
             </li>
           </ul>
         </div>
-        {nav &&      
-          <div>
-            <ul className="text-4xl flex flex-col items-center font-bold w-full absolute bg-dark-blue pb-10">
-              <li className="mb-8">
-                <Link href="/blog">
-                  <a>Blog</a>
-                </Link>
-              </li>
-              <li>
-                <Link href="">
-                  <a>Works</a>
-                </Link>
-              </li>
-            </ul>
-          </div>
-        }
+        <ul className={`${nav ? 'pb-10' : 'h-0'} w-full transition-all text-4xl flex flex-col items-center font-bold absolute bg-dark-blue z-10 shadow-lg overflow-hidden`}>
+          <li className="mb-8">
+            <Link href="/blog">
+              <a>Blog</a>
+            </Link>
+          </li>
+          <li>
+            <Link href="">
+              <a>Works</a>
+            </Link>
+          </li>
+        </ul>
       </nav>
       <main>
           { children }

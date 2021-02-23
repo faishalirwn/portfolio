@@ -21,3 +21,16 @@
     @apply self-end text-white text-opacity-50;
   }
 }
+
+@layer utilities {
+  .blog-entry-bg:before {
+    content: "";
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.25;
+  }
+}
