@@ -17,6 +17,12 @@ module.exports = {
       maxWidth: {
         '1/2': '50%',
       },
+      scale: {
+        '102': '1.02',
+      },
+      translate: {
+        '2px': '2px',
+      },
       typography: {
         DEFAULT: {
           css: {
@@ -47,6 +53,9 @@ module.exports = {
             },
             a: {
               color: 'rgba(255,255,255,0.95)',
+              '&:hover': {
+                opacity: '.8'
+              },
             },
             code: {
               color: 'rgba(255,255,255,0.95)',

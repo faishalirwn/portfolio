@@ -32,12 +32,12 @@ export default function Layout({ children }) {
           <ul className="hidden md:flex text-lg">
             <li className="mr-14">
               <Link href="/blog">
-                <a>Blog</a>
+                <a className="link-hover">Blog</a>
               </Link>
             </li>
             <li>
               <Link href="">
-                <a>Works</a>
+                <a className="link-hover">Works</a>
               </Link>
             </li>
           </ul>
@@ -45,12 +45,12 @@ export default function Layout({ children }) {
         <ul className={`${nav ? 'pb-10' : 'h-0'} w-full transition-all text-4xl flex flex-col items-center font-bold absolute bg-dark-blue z-10 shadow-lg overflow-hidden`}>
           <li className="mb-8">
             <Link href="/blog">
-              <a>Blog</a>
+              <a className="link-hover">Blog</a>
             </Link>
           </li>
           <li>
             <Link href="">
-              <a>Works</a>
+              <a className="link-hover">Works</a>
             </Link>
           </li>
         </ul>

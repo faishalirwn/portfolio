@@ -20,6 +20,9 @@
   .blog-entry-time {
     @apply self-end text-white text-opacity-50;
   }
+  .link-hover {
+    @apply text-white hover:text-opacity-80
+  }
 }
 
 @layer utilities {

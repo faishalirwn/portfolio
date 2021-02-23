@@ -16,7 +16,7 @@ export default function Blog({ allPostsData }) {
                 {allPostsData.map(({ id, title, coverImage, date }) => (
                     <Link href={`/blog/${id}`}>
                         <a>
-                          <div className="blog-entry relative blog-entry-bg">
+                          <div className="blog-entry relative blog-entry-bg transform transition shadow-lg hover:-translate-y-2px hover:scale-102">
                               <h3 className="relative blog-entry-title">{title}</h3>
                               <div className="relative blog-entry-time">
                                 <Date dateString={date} />
