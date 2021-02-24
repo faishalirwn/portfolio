@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Layout from '../../components/layout'
 import { getAllPostIds, getPostData } from '../../lib/posts'
 import Date from '../../components/date'
+import { motion } from "framer-motion"
 
 export default function Post({ postData }) {
   return (
@@ -9,7 +10,7 @@ export default function Post({ postData }) {
       <Head>
         <title>{postData.title}</title>
       </Head>
-      <article>
+      <motion.article initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
         <h1 className="font-heading text-4xl mb-2 lg:text-5xl">{postData.title}</h1>
         <div className="text-white text-opacity-75 mb-10">
           <Date dateString={postData.date} />
@@ -18,7 +19,7 @@ export default function Post({ postData }) {
           <img src={postData.coverImage} alt="Blog Cover Image" />
         </div>
         <div className="prose lg:prose-lg" dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
-      </article>
+      </motion.article>
     </Layout>
   )
 }

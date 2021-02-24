@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Layout from '../components/layout'
+import { motion } from "framer-motion"
 
 export default function Home() {
   return (
@@ -7,7 +8,7 @@ export default function Home() {
       <Head>
         <title>Faishal Irawan</title>
       </Head>
-      <div className="px-4 pt-28 md:px-20 md:text-center">
+      <motion.div className="px-4 pt-28 md:px-20 md:text-center" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
         <div className="mb-10">
           <h1 className="font-heading text-5xl md:text-7xl md:mr-20">Faishal</h1>
           <h1 className="font-heading text-5xl ml-14 md:text-7xl md:ml-20">Irawan</h1>
@@ -18,7 +19,7 @@ export default function Home() {
           <a href="https://github.com/faishalirwn" className="mr-8 link-hover">Github</a>
           <a href="mailto:faishalirwn@pm.me" className="link-hover">Email</a>
         </div>
-      </div>
+      </motion.div>
     </Layout>
   )
 }

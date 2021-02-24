@@ -3,6 +3,7 @@ import Link from 'next/link'
 import Layout from '../../components/layout'
 import Date from '../../components/date'
 import { getSortedPostsData } from '../../lib/posts'
+import { motion } from "framer-motion"
 
 export default function Blog({ allPostsData }) {
   return (
@@ -10,7 +11,7 @@ export default function Blog({ allPostsData }) {
         <Head>
           <title>Blog</title>
         </Head>
-        <div className="md:px-20">
+        <motion.div className="md:px-20" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
             <h1 className="font-heading text-5xl text-white text-opacity-50 md:text-7xl">Blog</h1>
             <div className="mt-10 flex flex-col md:flex-row md:flex-wrap md:justify-center">
                 {allPostsData.map(({ id, title, coverImage, date }) => (
@@ -31,7 +32,7 @@ export default function Blog({ allPostsData }) {
                     </Link>
                 ))}
             </div>
-        </div>        
+        </motion.div>        
     </Layout>
   )
 }

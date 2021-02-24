@@ -36,7 +36,7 @@ export default function Layout({ children }) {
               </Link>
             </li>
             <li>
-              <Link href="">
+              <Link href="/works">
                 <a className="link-hover">Works</a>
               </Link>
             </li>
@@ -49,7 +49,7 @@ export default function Layout({ children }) {
             </Link>
           </li>
           <li>
-            <Link href="">
+            <Link href="/works">
               <a className="link-hover">Works</a>
             </Link>
           </li>
