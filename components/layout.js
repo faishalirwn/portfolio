@@ -1,16 +1,20 @@
 import Head from 'next/head'
 import Link from 'next/link'
 import { useState } from 'react'
+import { useRouter } from 'next/router'
 
 export default function Layout({ children }) {
   const [nav, setNav] = useState(false)
+
+  const router = useRouter()
+  const isHome = router.pathname === '/'
 
   return (
     <div className="text-white text-opacity-95 font-sans px-6 mx-auto my-0 relative sm:max-w-3xl 2xl:max-w-4xl">
       <Head>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <nav className="relative">
+      <nav className="relative text-white text-opacity-90">
         <div className="py-8 flex justify-between">
           <Link href="/">
             <a>
@@ -32,12 +36,12 @@ export default function Layout({ children }) {
           <ul className="hidden md:flex text-lg">
             <li className="mr-14">
               <Link href="/blog">
-                <a className="link-hover">Blog</a>
+                <a className="hover:text-white hover:text-opacity-80">Blog</a>
               </Link>
             </li>
             <li>
               <Link href="/works">
-                <a className="link-hover">Works</a>
+                <a className="hover:text-white hover:text-opacity-80">Works</a>
               </Link>
             </li>
           </ul>
@@ -45,19 +49,24 @@ export default function Layout({ children }) {
         <ul className={`${nav ? 'pb-10' : 'h-0'} w-full transition-all text-4xl flex flex-col items-center font-bold absolute bg-dark-blue z-10 shadow-lg overflow-hidden`}>
           <li className="mb-8">
             <Link href="/blog">
-              <a className="link-hover">Blog</a>
+              <a className="hover:text-white hover:text-opacity-80">Blog</a>
             </Link>
           </li>
           <li>
             <Link href="/works">
-              <a className="link-hover">Works</a>
+              <a className="hover:text-white hover:text-opacity-80">Works</a>
             </Link>
           </li>
         </ul>
       </nav>
       <main>
           { children }
-      </main>      
+      </main>
+      {!isHome &&
+        <footer className="py-10 mt-40 text-center text-white text-opacity-20">
+          <span>If you're reading this, you are awesome</span>
+        </footer>
+      }    
     </div>
   )
 }
