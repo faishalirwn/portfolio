@@ -17,6 +17,9 @@ module.exports = {
       maxWidth: {
         '1/2': '50%',
       },
+      maxHeight: {
+        '480px': '480px',
+      },
       scale: {
         '102': '1.02',
       },

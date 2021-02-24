@@ -1,6 +1,5 @@
 import '../styles/globals.css'
 import { AnimatePresence } from "framer-motion"
-// import "tailwindcss/tailwind.css";
 
 function MyApp({ Component, pageProps, router }) {
   return (

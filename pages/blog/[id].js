@@ -15,10 +15,10 @@ export default function Post({ postData }) {
         <div className="text-white text-opacity-75 mb-10">
           <Date dateString={postData.date} />
         </div>
-        <div className="mb-10">
-          <img src={postData.coverImage} alt="Blog Cover Image" />
+        <div className="mb-12 max-h-480px">
+          <img src={postData.coverImage} className="block m-auto" alt="Blog Cover Image" />
         </div>
-        <div className="prose lg:prose-lg" dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
+        <div className="prose max-w-none my-0 mx-auto lg:prose-lg" dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
       </motion.article>
     </Layout>
   )
