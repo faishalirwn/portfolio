@@ -20,8 +20,8 @@
   .blog-entry-time {
     @apply self-end text-white text-opacity-50;
   }
-  .link-hover {
-    @apply text-white hover:text-opacity-80
+  .social-link {
+    @apply border-b border-red-600 border-dashed text-red-500 hover:text-opacity-80;
   }
 }
 
@@ -34,6 +34,6 @@
     right: 0px;
     bottom: 0px;
     left: 0px;
-    opacity: 0.25;
+    opacity: 0.2;
   }
 }
