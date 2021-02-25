@@ -29,6 +29,7 @@
   .blog-entry-bg:before {
     content: "";
     background-size: cover;
+    background-repeat: no-repeat;
     position: absolute;
     top: 0px;
     right: 0px;
