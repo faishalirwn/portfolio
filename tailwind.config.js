@@ -11,8 +11,16 @@ module.exports = {
         'dark-blue': '#010718',
         'dark-blue-light': '#070F28',
       },
+      height: {
+        '300px': '300px',
+        '600px': '600px',
+      },
       minHeight: {
         '10': '10rem',
+      },
+      width: {
+        '200px': '200px',
+        '500px': '500px',
       },
       maxWidth: {
         '1/2': '50%',
