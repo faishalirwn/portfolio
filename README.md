@@ -1,1 +1,1 @@
-Another personal web
+Another personal web (https://arise.vercel.app/)
