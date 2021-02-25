@@ -3,89 +3,15 @@ title: 'Proclub Experience'
 coverImage: '/gabi.jpg'
 date: '2021-02-24T09:01:01+07'
 ---
-one content contains your experience in Proclub
 
-<!-- Headings -->
-# Heading 1
-## Heading 2
-### Heading 3
-#### Heading 4
-##### Heading 5
-###### Heading 6
+One of my main goals for going to university is to make like-minded friends, network, and basically up my soft skill. Doing things alone won't get you far in terms of work in the future or happiness in general. Hard skill would always follow because with friends (especially upperclassmen or someone that has experience) and a good environment, it'll be easier to 'level up'. Only attending classes won't cut it, so I decided to join an organization. I've never been into one.
 
-<!-- Italics -->
-*This text* is italic
+## Why Proclub
+It was a boring night, the night of Lab organization introduction held by students' union, as freshmen we were introduced to Labs that we could join. Among the serious introduction videos there was one organization that introduced themselves using meme and has intriguing goals, it was Proclub. I was like 'enough said'.
 
-_This text_ is italic
+## My Experience
+I joined Proclub Software Engineering division in late 2019. From late 2019 to the first half of 2020 I went through the recruitment process called Teknofest, Probation period where new members would experience Proclub culture, and 'Proclub Magang', an internship preparation program.
 
-<!-- Strong -->
-**This text** is italic
+Long story short, I discovered that my knowledge of software engineering was as low as [Ex-Arm rating](https://myanimelist.net/anime/38853/Ex-Arm) and that creating reliable product is not simple. In Teknofest I learned about the overview of software engineering, In Probation I learned the process of creating a product and how to work in a group, In 'Proclub Magang' I learned how to prepare for internship, and I made friends along the way. Well, it wasn't all fine and dandy because half of Probation and 'Proclub Magang' was cancelled due to COVID.
 
-__This text__ is italic
-
-<!-- Strikethrough -->
-~~This text~~ is strikethrough
-
-<!-- Horizontal Rule -->
-
----
-___
-
-<!-- Blockquote -->
-> This is a quote
-
-<!-- Links -->
-[Traversy Media](http://www.traversymedia.com)
-
-[Traversy Media](http://www.traversymedia.com "Traversy Media")
-
-<!-- UL -->
-* Item 1
-* Item 2
-* Item 3
-  * Nested Item 1
-  * Nested Item 2
-
-<!-- OL -->
-1. Item 1
-1. Item 2
-1. Item 3
-
-<!-- Inline Code Block -->
-`<p>This is a paragraph</p>`
-
-<!-- Images -->
-![Markdown Logo](https://markdown-here.com/img/icon256.png)
-
-<!-- Github Markdown -->
-
-<!-- Code Blocks -->
-```bash
-  npm install
-
-  npm start
-```
-
-```javascript
-  function add(num1, num2) {
-    return num1 + num2;
-  }
-```
-
-```python
-  def add(num1, num2):
-    return num1 + num2
-```
-
-<!-- Tables -->
-
-| Name     | Email          |
-| -------- | -------------- |
-| John Doe | john@gmail.com |
-| Jane Doe | jane@gmail.com |
-
-
-<!-- Task List -->
-* [x] Task 1
-* [x] Task 2
-* [ ] Task 3
+I have to thank the organizer at those period for providing knowledge, inspiration, and friendly and welcoming environment for the new recruits.
