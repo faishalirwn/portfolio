@@ -24,7 +24,7 @@ export default function Home() {
             backgroundImage: "url('/diego-ph-uDuhW6RRi7s-unsplash.jpg')",
             zIndex: '-1',
           }} 
-          className="absolute top-0 right-0 w-200px h-300px bg-no-repeat bg-cover opacity-10 sm:w-500px sm:h-600px md:-right-32">
+          className="absolute top-0 right-0 w-200px h-300px bg-no-repeat bg-cover opacity-20 sm:w-500px sm:h-600px md:-right-32">
         </div>
       </motion.div>
     </Layout>
