@@ -25,7 +25,7 @@ export default function Blog({ allPostsData }) {
                           </div>
                           <style jsx>{`
                           .blog-entry-bg:before {
-                            background-image: url('${coverImage}');
+                            background-image: url('blogs/${coverImage}');
                           }
                         `}</style>
                         </a>

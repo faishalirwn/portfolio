@@ -1,6 +1,6 @@
 ---
 title: 'Arise'
-coverImage: '/arise.jpg'
+coverImage: 'arise.jpg'
 date: '2021-02-24T09:01:02+07'
 ---
 

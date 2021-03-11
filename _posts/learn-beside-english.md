@@ -1,6 +1,6 @@
 ---
 title: 'Is it worth it to learn language beside English?'
-coverImage: '/never-forgive-japanese.png'
+coverImage: 'never-forgive-japanese.png'
 date: '2021-02-24T09:01:03+07'
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: 'Proclub Experience'
-coverImage: '/gabi.jpg'
+coverImage: 'gabi.jpg'
 date: '2021-02-24T09:01:01+07'
 ---
 
