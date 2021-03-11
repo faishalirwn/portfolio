@@ -17,9 +17,15 @@ export default function Home() {
           Hi, I'm a CS Student from Indonesia. I'm not a cat, I'm 100% Human.
         </p>
         <div className="text-xl flex flex-wrap md:justify-center md:text-2xl">
-          <a href="https://www.linkedin.com/in/faishalirwn/" className="mr-8 social-link">LinkedIn</a>
-          <a href="https://github.com/faishalirwn" className="mr-8 social-link">Github</a>
-          <a href="mailto:faishalirwn@pm.me" className="social-link">Email</a>
+          <a href="https://www.linkedin.com/in/faishalirwn/" className="mr-8 social-link" target="_blank" rel="noopener noreferrer">
+            LinkedIn
+          </a>
+          <a href="https://github.com/faishalirwn" className="mr-8 social-link" target="_blank" rel="noopener noreferrer">
+            Github
+          </a>
+          <a href="mailto:faishalirwn@pm.me" className="social-link" target="_blank" rel="noopener noreferrer">
+            Email
+          </a>
         </div>
         <div 
           style={{
