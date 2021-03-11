@@ -1,7 +1,6 @@
 import Head from 'next/head'
-import Link from 'next/link'
 import Layout from '../../components/layout'
-import Date from '../../components/date'
+import PostEntry from '../../components/postEntry'
 import { getSortedPostsData } from '../../lib/posts'
 import { motion } from "framer-motion"
 
@@ -15,21 +14,12 @@ export default function Blog({ allPostsData }) {
             <h1 className="font-heading text-5xl text-white text-opacity-50 md:text-7xl">Blog</h1>
             <div className="mt-10 flex flex-col md:flex-row md:flex-wrap md:justify-center">
                 {allPostsData.map(({ id, title, coverImage, date }) => (
-                    <Link href={`/blog/${id}`}>
-                        <a>
-                          <div className="blog-entry relative blog-entry-bg transform transition shadow-lg hover:-translate-y-2px hover:scale-102">
-                              <h3 className="relative blog-entry-title">{title}</h3>
-                              <div className="relative blog-entry-time">
-                                <Date dateString={date} />
-                              </div>
-                          </div>
-                          <style jsx>{`
-                          .blog-entry-bg:before {
-                            background-image: url('blogs/${coverImage}');
-                          }
-                        `}</style>
-                        </a>
-                    </Link>
+                  <PostEntry
+                    id={id}
+                    title={title}
+                    coverImage={coverImage}
+                    date={date}
+                  />
                 ))}
             </div>
         </motion.div>        
