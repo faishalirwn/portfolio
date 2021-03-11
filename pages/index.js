@@ -13,7 +13,9 @@ export default function Home() {
           <h1 className="font-heading text-5xl md:text-7xl md:mr-20">Faishal</h1>
           <h1 className="font-heading text-5xl ml-14 md:text-7xl md:ml-20">Irawan</h1>
         </div>
-        <p className="mb-10 text-2xl text-white text-opacity-75 md:text-3xl">CS Student based in SF. Breathe air. Blink twice per second. 100% Human.</p>
+        <p className="mb-10 text-2xl text-white text-opacity-75 md:text-3xl">
+          Hi, I'm a CS Student from Indonesia. I'm not a cat, I'm 100% Human.
+        </p>
         <div className="text-xl flex flex-wrap md:justify-center md:text-2xl">
           <a href="https://www.linkedin.com/in/faishalirwn/" className="mr-8 social-link">LinkedIn</a>
           <a href="https://github.com/faishalirwn" className="mr-8 social-link">Github</a>
