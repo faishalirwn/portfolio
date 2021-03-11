@@ -35,26 +35,26 @@ export default function Layout({ children }) {
           )}        
           <ul className="hidden md:flex text-lg">
             <li className="mr-14">
-              <Link href="/blog">
-                <a className="hover:text-white hover:text-opacity-80">Blog</a>
-              </Link>
-            </li>
-            <li>
               <Link href="/projects">
                 <a className="hover:text-white hover:text-opacity-80">Projects</a>
+              </Link>
+            </li>
+            <li>              
+              <Link href="/blog">
+                <a className="hover:text-white hover:text-opacity-80">Blog</a>
               </Link>
             </li>
           </ul>
         </div>
         <ul className={`${nav ? 'pb-10' : 'h-0'} w-full transition-all text-4xl flex flex-col items-center font-bold absolute bg-dark-blue z-10 shadow-lg overflow-hidden`}>
-          <li className="mb-8">
-            <Link href="/blog">
-              <a className="hover:text-white hover:text-opacity-80">Blog</a>
+          <li className="mb-8">            
+            <Link href="/projects">
+              <a className="hover:text-white hover:text-opacity-80">Projects</a>
             </Link>
           </li>
           <li>
-            <Link href="/projects">
-              <a className="hover:text-white hover:text-opacity-80">Projects</a>
+            <Link href="/blog">
+              <a className="hover:text-white hover:text-opacity-80">Blog</a>
             </Link>
           </li>
         </ul>
