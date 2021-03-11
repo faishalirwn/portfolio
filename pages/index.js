@@ -21,7 +21,7 @@ export default function Home() {
         </div>
         <div 
           style={{
-            backgroundImage: "url('/diego-ph-uDuhW6RRi7s-unsplash.jpg')",
+            backgroundImage: "url('/callum-wale-5s0MuxRGf6M-unsplash.jpg')",
             zIndex: '-1',
           }} 
           className="absolute top-0 right-0 w-200px h-300px bg-no-repeat bg-cover opacity-20 sm:w-500px sm:h-600px md:-right-32">
