@@ -35,7 +35,7 @@ module.exports = {
       translate: {
         '2px': '2px',
       },
-      typography: {
+      typography: (theme) => ({
         DEFAULT: {
           css: {
             color: 'rgba(255,255,255,0.95)',
@@ -64,9 +64,9 @@ module.exports = {
               color: 'rgba(255,255,255,0.95)',
             },
             a: {
-              color: 'rgba(255,255,255,0.95)',
+              color: theme('colors.red.500'),
               '&:hover': {
-                opacity: '.8'
+                opacity: theme('textOpacity.80')
               },
             },
             code: {
@@ -74,7 +74,7 @@ module.exports = {
             },
           },
         },
-      },
+      }),
     },
   },
   variants: {
