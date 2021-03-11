@@ -12,6 +12,7 @@ module.exports = {
         'dark-blue-light': '#070F28',
       },
       height: {
+        '200px': '200px',
         '300px': '300px',
         '600px': '600px',
       },

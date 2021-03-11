@@ -40,8 +40,8 @@ export default function Layout({ children }) {
               </Link>
             </li>
             <li>
-              <Link href="/works">
-                <a className="hover:text-white hover:text-opacity-80">Works</a>
+              <Link href="/projects">
+                <a className="hover:text-white hover:text-opacity-80">Projects</a>
               </Link>
             </li>
           </ul>
@@ -53,8 +53,8 @@ export default function Layout({ children }) {
             </Link>
           </li>
           <li>
-            <Link href="/works">
-              <a className="hover:text-white hover:text-opacity-80">Works</a>
+            <Link href="/projects">
+              <a className="hover:text-white hover:text-opacity-80">Projects</a>
             </Link>
           </li>
         </ul>
