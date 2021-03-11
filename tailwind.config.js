@@ -17,7 +17,8 @@ module.exports = {
         '600px': '600px',
       },
       minHeight: {
-        '10': '10rem',
+        '11rem': '11rem',
+        '21rem': '21rem',
       },
       width: {
         '200px': '200px',
