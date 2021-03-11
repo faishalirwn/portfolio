@@ -1,10 +1,13 @@
 import Head from 'next/head'
 import Layout from '../../components/layout'
-import { getAllPostIds, getPostData } from '../../lib/posts'
 import Date from '../../components/date'
+import { DiscussionEmbed } from 'disqus-react';
+import { getAllPostIds, getPostData } from '../../lib/posts'
 import { motion } from "framer-motion"
+import { useRouter } from 'next/router'
 
 export default function Post({ postData }) {
+  const router = useRouter()
   return (
     <Layout>
       <Head>
@@ -18,7 +21,17 @@ export default function Post({ postData }) {
         <div className="mb-12 max-h-480px">
           <img src={`/blogs/${postData.coverImage}`} className="block m-auto" alt="Blog Cover Image" />
         </div>
-        <div className="prose max-w-none my-0 mx-auto lg:prose-lg" dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
+        <div className="mb-40 prose max-w-none my-0 mx-auto lg:prose-lg" dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
+        <DiscussionEmbed
+            shortname='mfaishal'
+            config={
+                {
+                    url: `http://mfaishal.com${router.asPath}`,
+                    identifier: `http://mfaishal.com${router.asPath}`,
+                    title: postData.title
+                }
+            }
+        />
       </motion.article>
     </Layout>
   )
