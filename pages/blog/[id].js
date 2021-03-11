@@ -16,7 +16,7 @@ export default function Post({ postData }) {
           <Date dateString={postData.date} />
         </div>
         <div className="mb-12 max-h-480px">
-          <img src={postData.coverImage} className="block m-auto" alt="Blog Cover Image" />
+          <img src={`/blogs/${postData.coverImage}`} className="block m-auto" alt="Blog Cover Image" />
         </div>
         <div className="prose max-w-none my-0 mx-auto lg:prose-lg" dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
       </motion.article>
