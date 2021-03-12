@@ -1,13 +1,29 @@
+import React, { useEffect } from 'react'
 import Head from 'next/head'
 import Layout from '../../components/layout'
 import Date from '../../components/date'
-import { DiscussionEmbed } from 'disqus-react';
+import Comment from '../../components/comment'
 import { getAllPostIds, getPostData } from '../../lib/posts'
 import { motion } from "framer-motion"
-import { useRouter } from 'next/router'
 
 export default function Post({ postData }) {
-  const router = useRouter()
+  const commentBox = React.createRef()
+
+  useEffect(() => {
+    const commentScript = document.createElement('script')
+    commentScript.async = true
+    commentScript.src = 'https://utteranc.es/client.js'
+    commentScript.setAttribute('repo', 'faishalirwn/arise-comments')
+    commentScript.setAttribute('issue-term', 'pathname')
+    commentScript.setAttribute('theme', 'github-dark')
+    commentScript.setAttribute('crossorigin', 'anonymous')
+    if (commentBox && commentBox.current) {
+      commentBox.current.appendChild(commentScript)
+    } else {
+      console.log(`Error adding utterances comments on: ${commentBox}`)
+    }
+  }, [])
+
   return (
     <Layout>
       <Head>
@@ -22,16 +38,10 @@ export default function Post({ postData }) {
           <img src={`/blogs/${postData.coverImage}`} className="block m-auto" alt="Blog Cover Image" />
         </div>
         <div className="mb-40 prose max-w-none my-0 mx-auto lg:prose-lg" dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
-        <DiscussionEmbed
-            shortname='mfaishal'
-            config={
-                {
-                    url: `http://mfaishal.com${router.asPath}`,
-                    identifier: `http://mfaishal.com${router.asPath}`,
-                    title: postData.title
-                }
-            }
-        />
+        <div>
+          <h2 className="font-heading text-2xl mb-2 lg:text-3xl">Comments</h2>
+          <Comment commentBox={commentBox} />
+        </div>
       </motion.article>
     </Layout>
   )
