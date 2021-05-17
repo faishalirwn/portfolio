@@ -56,8 +56,7 @@ export default function Home({ featuredProjectsData }) {
           </div>
           <div
             style={{
-              backgroundImage:
-                "url('https://images.unsplash.com/photo-1620497772625-2c84eaaf99fb?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80')",
+              backgroundImage: "url('/solen-feyissa-bYpqDs-lVJ8-unsplash.jpg')",
               zIndex: "-1",
             }}
             className="absolute top-0 right-0 w-200px h-300px bg-no-repeat bg-cover opacity-40 md:w-500px md:h-600px md:-right-32"
