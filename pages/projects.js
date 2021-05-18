@@ -11,7 +11,7 @@ export default function Projects({ allProjectsData }) {
         <title>Projects</title>
       </Head>
       <motion.div
-        className="relative md:px-20 "
+        className="relative px-10 md:px-0"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
